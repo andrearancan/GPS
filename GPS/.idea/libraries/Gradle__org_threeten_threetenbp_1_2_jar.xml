@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.threeten:threetenbp:1.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.2/5dcc041d8fdfd5ca4a2ec05cb73958fcd97f56f6/threetenbp-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.2/5574148ea24ca5165bfa470c027029ece98442b7/threetenbp-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.2/46c39f861445c5c8abd3c856ed54fb2e92be734c/threetenbp-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

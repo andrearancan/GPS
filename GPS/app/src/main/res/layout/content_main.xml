@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </org.osmdroid.views.MapView>
+
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/ground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="250dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:text="LANDMARK 0"
+        android:onClick="onClickBtn"/>
+</RelativeLayout>

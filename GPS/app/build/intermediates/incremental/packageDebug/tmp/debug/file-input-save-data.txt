@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Nov 13 20:28:28 CET 2019
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\andre_000\\Desktop\\Materiale_Universita\\Triennale\\Tesi\\GPS-master\\GPS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

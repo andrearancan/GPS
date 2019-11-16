@@ -1,0 +1,5 @@
+﻿use-ruleset alias=default
+add-web-map
+load-source "Maperitive/Mappe/tile.osm"
+export-svg output/output.svg
+exit

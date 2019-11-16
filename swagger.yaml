@@ -1,0 +1,52 @@
+swagger: '2.0' #versione di Swagger 
+info: # informazioni delle API ad alto livello
+  description: probabilistic description of a map #Qui va inserita la descrizione
+  version: 1.0.0 #API version
+  title: Gaussian extractor # titolo API 
+  license: #Swagger license info
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host:  192.168.2.185:8080 # hostname o indirizzo IP con aggiunta della porta. !!!N.B la porta deve essere inserita altrimenti il client non viene configurato correttamente.!!!
+basePath: /v1 #Basepath quando ci sono più versioni delle API. Per accedere da browser possiamo quindi digitare il seguente indirizzo: localhost:8080/v1/
+tags: # Tag information for each API operation. Multiple tags for multiple API operation
+  - name: calculator #Tag name
+    description: calc #Tag description of API operation
+schemes:
+  - http #security schemes
+paths:
+  '/calculator/{latitude}/{longitude}/{altitude}': #percorso risorsa con anche parametri d'input. Nel nostro caso abbiamo l'indirizzo: localhost:8080/v1/calculator/somma/4/5
+    get: #Request method type, GET,POST etc.
+      tags: # Refer to created tag above
+        - calculator
+      summary: calcolatrice semplice #Summary
+      description: calcola i parametri delle gaussiane che descrivono la mappa  #Descrizione dell'operazione fatta dalla API
+      operationId: compute # Nome del metodo che svolge il compito.
+      produces:
+        - text/plain #Tipo di dato ritornato al client nella risposta
+      parameters:  #lista parametri in input con relativi tipi.
+         
+        - name: latitude 
+          in: path 
+          required: true 
+          type: string
+          format: string 
+          
+        - name: longitude 
+          in: path 
+          required: true 
+          type: string 
+          format: string 
+          
+        - name: altitude
+          in: path
+          required: true
+          type: string 
+          format: string 
+       
+      responses: # API response
+        '200': #Successful status code
+          description:  Calcolo svolto correttamente! #Successful status descriptiond
+          schema:
+            type: string #tipo di ritorno.
+        '400': #Unsuccessful response code
+          description: Operazione non valida! #Unsuccessful response description
